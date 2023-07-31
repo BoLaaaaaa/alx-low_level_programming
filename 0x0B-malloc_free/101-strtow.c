@@ -22,7 +22,7 @@ while (str[i] != ' ' && str[i] != '\0')
 i++;
 }
 }
-return count;
+return (count);
 }
 
 /**
