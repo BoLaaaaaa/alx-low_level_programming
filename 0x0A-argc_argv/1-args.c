@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+
 /**
  * main - Entry point of the program
  * @argc: The number of arguments
@@ -7,7 +8,7 @@
  *
  * Return: Always 0
  */
-int main(int argc, char *argv[])
+int main(int argc, char *argv[] _attribute _((unused)))
 {
 int num_args = argc - 1;
 _putchar('0' + num_args);
