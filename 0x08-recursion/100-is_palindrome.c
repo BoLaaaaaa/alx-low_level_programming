@@ -25,12 +25,12 @@ int _strlen(char *s)
 int check_palindrome(char *s, int start, int end)
 {
     if (start >= end)
-        return 1; // Base case: If all characters have been checked, it's a palindrome
+        return 1;
 
     if (s[start] != s[end])
-        return 0; // If the characters don't match, it's not a palindrome
+        return 0; 
 
-    return check_palindrome(s, start + 1, end - 1); // Recursive call, move towards the middle
+    return check_palindrome(s, start + 1, end - 1); 
 }
 
 /**
@@ -44,7 +44,7 @@ int is_palindrome(char *s)
     int len = _strlen(s);
 
     if (len <= 1)
-        return 1; // Empty string or single character is a palindrome
+        return 1; 
 
     return check_palindrome(s, 0, len - 1);
 }

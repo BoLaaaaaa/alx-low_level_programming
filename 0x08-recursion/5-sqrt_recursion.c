@@ -12,13 +12,13 @@ int calculate_sqrt(int n, int guess)
     int new_guess;
 
     if (guess * guess == n)
-        return guess; // Found the square root
+        return guess; 
 
     if (guess * guess > n)
-        return -1; // The number doesn't have a natural square root
+        return -1;
 
-    new_guess = guess + 1; // Increment the guess
-    return calculate_sqrt(n, new_guess); // Recursive call with the new guess
+    new_guess = guess + 1;
+    return calculate_sqrt(n, new_guess);
 }
 
 /**
@@ -30,8 +30,8 @@ int calculate_sqrt(int n, int guess)
 int _sqrt_recursion(int n)
 {
     if (n < 0)
-        return -1; // Negative numbers don't have natural square roots
+        return -1; 
 
-    return calculate_sqrt(n, 0); // Start with a guess of 0
+    return calculate_sqrt(n, 0); 
 }
 
