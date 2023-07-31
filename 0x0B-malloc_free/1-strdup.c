@@ -7,7 +7,7 @@
  *
  * Return: Pointer to the duplicated string, or NULL if str is NULL or if allocation fails
  */
-char *_strdup(char *str)
+char *`strdup(char *str)
 {
 char *duplicate;
 unsigned int length = 0, i;
