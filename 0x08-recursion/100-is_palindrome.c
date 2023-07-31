@@ -13,7 +13,7 @@ return (0);
 return (1 + _strlen(s + 1));
 }
 /**
- * check_palindrome Recursive helper function to check if a string a palindrome
+ * check_palindrome - Recursive helper function to check if a string is a palindrome
  * @s: The input string
  * @start: The index of the start character
  * @end: The index of the end character
