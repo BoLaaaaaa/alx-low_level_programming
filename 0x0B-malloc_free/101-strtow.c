@@ -52,7 +52,7 @@ i++;
 len = 0;
 while (str[i + len] != ' ' && str[i + len] != '\0')
 len++;
-words[k] = (char *)malloc((len + 1) * sizeof(char))
+words[k] = (char *)malloc((len + 1) * sizeof(char));
 if (words[k] == NULL)
 {
 for (j = 0; j < k; j++)
