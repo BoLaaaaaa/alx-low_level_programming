@@ -1,7 +1,8 @@
 #include <stdio.h>
 
-int main(int argc, char *argv[]) {
-    printf("%d\n", argc - 1);
-    return 0;
-}
 
+int main(int argc, char *argv[] _attribute_((unused)))
+{
+printf("%d\n", argc - 1);
+return 0;
+}
