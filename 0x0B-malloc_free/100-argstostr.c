@@ -20,7 +20,7 @@ for (i = 0; i < ac; i++)
 {
 for (j = 0; av[i][j] != '\0'; j++)
 total_length++;
-total_length++; 
+total_length++;
 }
 str = (char *)malloc(sizeof(char) * (total_length + 1));
 if (str == NULL)
@@ -32,9 +32,9 @@ for (j = 0; av[i][j] != '\0'; j++)
 str[k] = av[i][j];
 k++;
 }
-str[k] = '\n'; 
+str[k] = '\n';
 k++;
 }
-str[k] = '\0'; 
+str[k] = '\0';
 return (str);
 }
