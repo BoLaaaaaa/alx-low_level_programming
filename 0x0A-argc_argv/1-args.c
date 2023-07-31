@@ -1,8 +1,16 @@
 #include "main.h"
 
-
-int main(int argc, char *argv[] _attribute_((unused)))
+/**
+ * main - Entry point of the program
+ * @argc: The number of arguments
+ * @argv: An array of pointers to the arguments
+ *
+ * Return: Always 0
+ */
+int main(int argc, char *argv[])
 {
-printf("%d\n", argc - 1);
-return 0;
+int num_args = argc - 1;
+_putchar('0' + num_args);
+_putchar('\n');
+return (0);
 }
