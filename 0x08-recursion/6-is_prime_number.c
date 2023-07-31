@@ -9,18 +9,14 @@
  */
 int check_prime(int n, int div)
 {
-    if (n <= 1)
-        return 0;
-
-    if (div >= n)
-        return 1;
-
-    if (n % div == 0)
-        return 0;
-
-    return check_prime(n, div + 1); 
+if (n <= 1)
+return (0);
+if (div >= n)
+return (1);
+if (n % div == 0)
+return (0);
+return (check_prime(n, div + 1));
 }
-
 /**
  * is_prime_number - Returns 1 if the input integer is a prime number, otherwise 0
  * @n: The number to check if it's prime
@@ -29,6 +25,5 @@ int check_prime(int n, int div)
  */
 int is_prime_number(int n)
 {
-    return check_prime(n, 2);
+return (check_prime(n, 2));
 }
-
