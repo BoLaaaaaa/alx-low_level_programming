@@ -1,20 +1,16 @@
 #include <stdlib.h>
+#include "main.h"
 
-int main(void)
+char *create_array(unsigned int size, char c)
 {
-char *buffer;
-buffer = create_array(98, 'H');
-if (buffer == NULL)
-{
-printf("failed to allocate memory\n");
-return (1);
-}
-for (int i = 0; i < 98; i++)
-{
-printf("%c ", buffer[i]);
-if ((i + 1) % 10 == 0)
-printf("\n");
-}
-free(buffer);
-return (0);
+char *array;
+unsigned int i;
+if (size == 0)
+return NULL;
+array = malloc(sizeof(char) * size);
+if (array == NULL)
+return NULL;
+for (i = 0; i < size; i++)
+array[i] = c;
+return array;
 }
