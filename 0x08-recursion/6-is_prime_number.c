@@ -18,7 +18,7 @@ return (0);
 return (check_prime(n, div + 1));
 }
 /**
- * is_prime_number - Returns 1 if the input integer is a prime number, otherwise 0
+ * is_prime_number - Returns 1 if the input integer is aprime number,otherwise
  * @n: The number to check if it's prime
  *
  * Return: 1 if the number is prime, otherwise 0
