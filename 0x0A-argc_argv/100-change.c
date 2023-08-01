@@ -4,7 +4,6 @@
  * main - Entry point of the program
  * @argc: The number of arguments
  * @argv: An array of pointers to the arguments
- *
  * Return: 0 on success, 1 on failure
  */
 int main(int argc, char *argv[])
@@ -46,8 +45,6 @@ amount %= 2;
 else
 {
 coins += amount;
-amount = 0;
-}}
+amount = 0}}
 printf("%d\n", coins);
-return (0);
-}
+return ((0))};
