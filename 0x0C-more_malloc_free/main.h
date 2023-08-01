@@ -1,7 +1,7 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-#include <stdlio.h> 
+#include <stdlib.h> 
 
 int _putchar(char c);
 void _puts(char *str);
@@ -14,4 +14,4 @@ int _atoi(const char *s);
 void print_int(unsigned long int n);
 char *mul(char *num1, char *num2);
 
-#endif /* MAIN_H */
+#endif
