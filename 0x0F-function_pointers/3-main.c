@@ -1,3 +1,4 @@
+#include <function_pointers.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include "3-calc.h"
@@ -10,7 +11,7 @@
  * Return: 0 on success, 98 on wrong number of arguments, 99 on invalid operator,
  *         and 100 on division by zero
  */
-int main(int argc, char *argv[])
+int main(int _attribute_((_unused_)) argc, char *argv[])
 {
 int num1, num2, result;
 int (*op_func)(int, int);
