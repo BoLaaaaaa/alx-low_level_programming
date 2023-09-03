@@ -1,4 +1,4 @@
-#include "main.h"
+#include <stdio.h>
 #include <stdlib.h>
 /**
  * main - Entry point of the program
@@ -6,7 +6,6 @@
  * @argv: An array of pointers to the arguments
  * Return: 0 on success, 1 on failure
  */
-#include <stdio.h>
 int main(int argc, char *argv[])
 {
 if (argc != 2)
