@@ -1,19 +1,14 @@
-#include <stdlib.h>
 #include "lists.h"
 
+void _constructor(void) __attribute__ ((constructor));
+
 /**
- * free_list - Frees a linked list_t list.
- * @head: Pointer to the head of the list to be freed.
+ * _constructor - executes before main()
+ *
+ * Return: void
  */
-void free_list(list_t *head)
+void _constructor(void)
 {
-list_t *current, *next_node;
-current = head;
-while (current != NULL)
-{
-next_node = current->next;
-free(current->str);
-free(current);
-current = next_node;
-}
+	printf("You're beat! and yet, you must allow,\n"
+		"I bore my house upon my back!\n");
 }
